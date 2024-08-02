@@ -1,0 +1,20 @@
+.nav-item .nav-link {
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item .nav-link:hover {
+    background-color: #5e5f5e;
+    color: #058bf8;
+}
+
+.nav-item .nav-link[data-toggle="collapse"]:after {
+    content: " ▾";
+    float: right;
+    transition: transform 0.3s;
+}
+
+.nav-item .nav-link[data-toggle="collapse"][aria-expanded="true"]:after {
+    content: " ▴";
+    transform: rotate(180deg);
+}
