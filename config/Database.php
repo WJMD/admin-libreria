@@ -5,7 +5,7 @@ class Database
 
 	private $host  = 'localhost';
 	private $user  = 'root';
-	private $password   = "1234";
+	private $password   = "";
 	private $database  = "admin-libreria";
 
 	public function getConnection()
