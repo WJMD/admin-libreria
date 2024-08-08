@@ -15,7 +15,7 @@ include('inc/header4.php');
     <main>
         <section class="container my-5">
             <h1 class="mb-4">Contáctanos</h1>
-            <form action="contact_action.php" method="post">
+            <form id="contact-form" action="save_contact.php" method="POST">
                 <div class="mb-3">
                     <label for="name" class="form-label">Nombre:</label>
                     <input type="text" class="form-control" id="name" name="name" required>
@@ -38,6 +38,6 @@ include('inc/header4.php');
 			?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script> src="js/contac.js" </script>
+    <script> src="js/contact.js" </script>
 </body>
 </html>
