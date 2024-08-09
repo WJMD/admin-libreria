@@ -1,12 +1,12 @@
-.book-item {
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-    width: 100px;
-    height: 150px;
+.book-card {
+    display: inline-block !important;
+    margin: 10px !important;
+    text-align: center !important;
+    width: 100px !important;
+    height: 150px !important;
 }
 
-.book-item img {
-    width: 75px;
-    height: 100px;
+.book-card img {
+    width: 75px !important;
+    height: 100px !important;
 }

@@ -58,16 +58,16 @@ $homeBooks = $book->showHomeBooks();
 
   <div class="container my-5">
         <h1 class="mb-4">Bienvenido a nuestra Librería</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
             <?php foreach ($homeBooks as $book) { ?>
-                <div class="col">
-                <div class="card book-card h-100">
-                    <img src="images/<?php echo $book['picture']; ?>" class="card-img-top" alt="<?php echo $book['name']; ?>">
-                    <div class="card-body">
-                        <h5 class="card-title"><?php echo $book['name']; ?></h5>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card book-card h-60" style="width: 100%;">
+                        <img src="images/<?php echo $book['picture']; ?>" class="card-img-top" alt="<?php echo $book['name']; ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $book['name']; ?></h5>
+                            <a href="#" class="btn btn-primary">Ver más</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             <?php } ?>
         </div>
