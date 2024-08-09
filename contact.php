@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
 
-include('inc/header4.php');
-?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +9,9 @@ include('inc/header4.php');
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <main>
+    <?php include('top_menus.php'); ?>
         <section class="container my-5">
             <h1 class="mb-4">Contáctanos</h1>
             <form id="contact-form" action="save_contact.php" method="POST">

@@ -7,7 +7,7 @@ class Contact
     private $email;
     private $message;
     private $conn;
-    private $contactTable = 'contacts';
+    private $contactTable = 'contact';
 
     public function __construct($db)
     {

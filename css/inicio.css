@@ -1,0 +1,12 @@
+.book-item {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    width: 100px;
+    height: 150px;
+}
+
+.book-item img {
+    width: 75px;
+    height: 100px;
+}

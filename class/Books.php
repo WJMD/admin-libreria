@@ -278,4 +278,34 @@ class Books
 		$result = $stmt->get_result();
 		return $result->num_rows;
 	}
+
+	// Esta funcion mostrada las imagenes y nombre de los libros en el inicio
+
+	public function showHomeBooks($limit = 10)
+    {
+        $sqlQuery = "SELECT book.bookid, book.picture, book.name 
+                    FROM " . $this->bookTable . " book
+                    ORDER BY book.bookid DESC
+                    LIMIT ?";
+
+        $stmt = $this->conn->prepare($sqlQuery);
+        $stmt->bind_param("i", $limit);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        $books = array();
+        while ($book = $result->fetch_assoc()) {
+            if (!$book['picture']) {
+                $book['picture'] = 'default.jpg';
+            }
+            $books[] = array(
+                'bookid' => $book['bookid'],
+                'picture' => $book['picture'],
+                'name' => $book['name']
+            );
+        }
+
+        return $books;
+    }
+
 }
