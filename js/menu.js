@@ -1,4 +1,5 @@
-ocument.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", function () {
     var navLinks = document.querySelectorAll('.nav-link[data-toggle="collapse"]');
 
     navLinks.forEach(function (link) {

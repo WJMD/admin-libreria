@@ -23,9 +23,9 @@ include('inc/header4.php');
 </head>
 
 <body>
-
+<?php include('top_menus.php'); ?>
   <div class="container-fluid" id="main">
-    <?php include('top_menus.php'); ?>
+   
     <div class="row row-offcanvas row-offcanvas-left">
       <?php include('left_menus.php'); ?>
       <div class="col-md-9 col-lg-10 main">

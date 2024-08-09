@@ -6,7 +6,6 @@
    color: white;
    text-align: center;">
  <h7><p class="text-center">&copy; <?php echo date("Y"); ?> Admin Librari. Todos los derechos reservados.</p></h7>
-  <a href="contact.php">Contacto</a>
-  <a href="about.php">Nosotro</a>
+  
 
 </footer>
